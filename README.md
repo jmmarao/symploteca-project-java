@@ -4,7 +4,7 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/jmmarao/symploteca-project-java)
 
 
-# :mortar_board: Algoritmos e Programação II
+# :mortar_board: Programação Orientada a Objetos
 
 :triangular_flag_on_post: Professor Responsável: Prof. Dr. Lucas Bueno Ruas de Oliveira
 
