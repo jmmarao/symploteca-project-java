@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.application.controller.MainUIController">
+   <children>
+      <Label layoutX="256.0" layoutY="14.0" text="Symploteca">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="50.0" text="ID do Leitor: " />
+      <TextField fx:id="txtId" layoutX="83.0" layoutY="46.0" />
+      <Button fx:id="btnSearch" layoutX="242.0" layoutY="46.0" mnemonicParsing="false" onAction="#findUser" text="Buscar" />
+      <Button fx:id="btnManagementBook" layoutX="14.0" layoutY="365.0" mnemonicParsing="false" onAction="#manageBooks" prefHeight="25.0" prefWidth="124.0" text="Gerenciar Livros" />
+      <Button fx:id="btnUserBook" layoutX="149.0" layoutY="365.0" mnemonicParsing="false" onAction="#manageUsers" prefHeight="25.0" prefWidth="124.0" text="Gerenciar Usuários" />
+      <Button fx:id="btnBorrowOrReturn" layoutX="462.0" layoutY="365.0" mnemonicParsing="false" onAction="#borrowOrReturn" text="Realizar Empréstimo" />
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="78.0" onMouseClicked="#getSelectedAndSetButton" prefHeight="277.0" prefWidth="574.0">
+        <columns>
+          <TableColumn fx:id="cName" prefWidth="154.0" text="Nome" />
+          <TableColumn fx:id="cAuthors" prefWidth="168.0" text="Autores" />
+            <TableColumn fx:id="cPublisher" prefWidth="81.0" text="Editora" />
+            <TableColumn fx:id="cGender" prefWidth="100.0" text="Gênero" />
+            <TableColumn fx:id="cStatus" prefWidth="70.0" text="Estado" />
+        </columns>
+      </TableView>
+      <Label fx:id="lbName" layoutX="309.0" layoutY="50.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.application.controller.BookManagementUIController">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" prefHeight="327.0" prefWidth="573.0">
+        <columns>
+          <TableColumn fx:id="cName" prefWidth="93.0" text="Nome" />
+          <TableColumn fx:id="cAuthors" prefWidth="211.0" text="Autores" />
+            <TableColumn fx:id="cPublisher" prefWidth="98.0" text="Editora" />
+            <TableColumn fx:id="cGender" prefWidth="98.0" text="Gênero" />
+            <TableColumn fx:id="cStatus" prefWidth="72.0" text="Estado" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#backToPreviousScene" prefHeight="25.0" prefWidth="61.0" text="Voltar" />
+      <Button fx:id="btnDelete" layoutX="316.0" layoutY="361.0" mnemonicParsing="false" onAction="#deleteBook" prefHeight="25.0" prefWidth="61.0" text="Deletar" />
+      <Button fx:id="btnDetail" layoutX="386.0" layoutY="361.0" mnemonicParsing="false" onAction="#detailBook" text="Detalhar" />
+      <Button fx:id="btnEdit" layoutX="456.0" layoutY="361.0" mnemonicParsing="false" onAction="#editBook" prefHeight="25.0" prefWidth="61.0" text="Editar" />
+      <Button fx:id="btnNew" layoutX="526.0" layoutY="361.0" mnemonicParsing="false" onAction="#createbook" prefHeight="25.0" prefWidth="61.0" text="Novo" />
+   </children>
+</AnchorPane>

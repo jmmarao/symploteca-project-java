@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.application.controller.UserUIController">
+   <children>
+      <Label layoutX="28.0" layoutY="14.0" text="Nome: " />
+      <Label layoutX="28.0" layoutY="42.0" text="E-mail: " />
+      <Label layoutX="16.0" layoutY="70.0" text="Telefone: " />
+      <Label layoutX="31.0" layoutY="97.0" text="Curso: " />
+      <TextField fx:id="txtName" layoutX="73.0" layoutY="10.0" prefHeight="25.0" prefWidth="513.0" />
+      <TextField fx:id="txtEmail" layoutX="72.0" layoutY="38.0" prefHeight="25.0" prefWidth="415.0" />
+      <CheckBox fx:id="ckFaculty" layoutX="502.0" layoutY="42.0" mnemonicParsing="false" onAction="#configureUserViewType" text="Funcionário" />
+      <TextField fx:id="txtPhone" layoutX="71.0" layoutY="66.0" prefHeight="25.0" prefWidth="200.0" />
+      <TextField fx:id="txtCourse" layoutX="71.0" layoutY="93.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="282.0" layoutY="70.0" text="ID Estudante/Funcionário: " />
+      <Label layoutX="339.0" layoutY="97.0" text="Departamento: " />
+      <TextField fx:id="txtInstitutionId" layoutX="423.0" layoutY="66.0" prefHeight="25.0" prefWidth="163.0" />
+      <TextField fx:id="txtDepartment" disable="true" layoutX="422.0" layoutY="93.0" prefHeight="25.0" prefWidth="163.0" />
+      <Button fx:id="btnCancel" layoutX="450.0" layoutY="361.0" mnemonicParsing="false" onAction="#backToPreviousScene" text="Cancelar" />
+      <Button fx:id="btnConfirm" layoutX="524.0" layoutY="361.0" mnemonicParsing="false" onAction="#saveOrUpdate" prefHeight="25.0" prefWidth="62.0" text="Salvar" />
+   </children>
+</AnchorPane>

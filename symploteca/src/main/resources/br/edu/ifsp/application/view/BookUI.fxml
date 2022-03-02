@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.application.controller.BookUIController">
+   <children>
+      <Label layoutX="24.0" layoutY="14.0" text="Nome: " />
+      <TextField fx:id="txtName" layoutX="64.0" layoutY="10.0" prefHeight="25.0" prefWidth="516.0" />
+      <Label layoutX="15.0" layoutY="47.0" text="Autores: " />
+      <Label layoutX="17.0" layoutY="78.0" text="Editora: " />
+      <Label layoutX="28.0" layoutY="108.0" text="ISBN: " />
+      <Label layoutX="221.0" layoutY="108.0" text="Nr. Páginas: " />
+      <Label layoutX="361.0" layoutY="108.0" text="Gênero: " />
+      <TextField fx:id="txtAuthors" layoutX="64.0" layoutY="43.0" prefHeight="25.0" prefWidth="516.0" />
+      <TextField fx:id="txtPublisher" layoutX="64.0" layoutY="74.0" prefHeight="25.0" prefWidth="516.0" />
+      <TextField fx:id="txtIsbn" layoutX="64.0" layoutY="104.0" />
+      <TextField fx:id="txtPages" layoutX="287.0" layoutY="104.0" prefHeight="25.0" prefWidth="66.0" />
+      <ComboBox fx:id="cbGender" layoutX="406.0" layoutY="104.0" prefHeight="25.0" prefWidth="173.0" />
+      <Button fx:id="btnCancel" layoutX="450.0" layoutY="358.0" mnemonicParsing="false" onAction="#backToPreviousScene" text="Cancelar" />
+      <Button fx:id="btnConfirm" layoutX="524.0" layoutY="358.0" mnemonicParsing="false" onAction="#saveOrUpdate" prefHeight="25.0" prefWidth="62.0" text="Salvar" />
+      <Label layoutX="19.0" layoutY="140.0" text="Edição: " />
+      <TextField fx:id="txtEdition" layoutX="64.0" layoutY="136.0" />
+   </children>
+</AnchorPane>

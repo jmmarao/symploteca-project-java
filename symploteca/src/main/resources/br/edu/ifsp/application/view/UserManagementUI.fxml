@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifsp.application.controller.UserManagementUIController">
+   <children>
+      <TableView fx:id="tableView" layoutX="11.0" layoutY="14.0" prefHeight="200.0" prefWidth="579.0">
+        <columns>
+          <TableColumn fx:id="cId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="cName" prefWidth="135.0" text="Nome" />
+            <TableColumn fx:id="cEmail" prefWidth="176.0" text="E-mail" />
+            <TableColumn fx:id="cPhone" prefWidth="96.0" text="Telefone" />
+            <TableColumn fx:id="cType" prefWidth="96.0" text="Tipo" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#backToPreviousScene" prefHeight="25.0" prefWidth="61.0" text="Voltar" />
+      <Button fx:id="btnDelete" layoutX="319.0" layoutY="361.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="25.0" prefWidth="61.0" text="Deletar" />
+      <Button fx:id="btnDetail" layoutX="389.0" layoutY="361.0" mnemonicParsing="false" onAction="#detailUser" text="Detalhar" />
+      <Button fx:id="btnEdit" layoutX="459.0" layoutY="361.0" mnemonicParsing="false" onAction="#editUser" prefHeight="25.0" prefWidth="61.0" text="Editar" />
+      <Button fx:id="btnNew" layoutX="529.0" layoutY="361.0" mnemonicParsing="false" onAction="#createUser" prefHeight="25.0" prefWidth="61.0" text="Novo" />
+   </children>
+</AnchorPane>
